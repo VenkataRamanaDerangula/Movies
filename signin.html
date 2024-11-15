@@ -106,7 +106,7 @@
           const user = userCredential.user;
           localStorage.setItem("authToken", user.accessToken);
           alert("Login successful");
-          window.location.href = "task.html";
+          window.location.href = "#";
         })
         .catch((error) => {
           alert(error.message);
