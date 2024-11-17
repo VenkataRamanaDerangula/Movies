@@ -1,5 +1,7 @@
 import React from "react";
 import "../assets/styles.css";
+import PlanBg from "../assets/images/plan-bg.svg";
+import PlanImg from "../assets/images/plan-img.webp";
 
 const PricingSection = () => {
   return (
@@ -8,12 +10,12 @@ const PricingSection = () => {
         <div className="left-section">
           <img
             className="bg-circle"
-            src="./images/plan-bg.svg"
+            src={PlanBg}
             alt="Background"
           />
           <img
             className="main-img"
-            src="./images/plan-img.webp"
+            src={PlanImg}
             alt="Main"
           />
           <div className="price-tag individual">

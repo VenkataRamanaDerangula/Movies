@@ -1,5 +1,9 @@
 import React from "react";
 import "../assets/styles.css";
+import SquareLogo from "../assets/images/logos/Square_logo.svg";
+import EbayLogo from "../assets/images/logos/ebay_logo.svg";
+import SpotifyLogo from "../assets/images/logos/spotify_logo.svg";
+import CiscoLogo from "../assets/images/logos/cisco_logo.svg";
 
 const TrustedBy = () => {
   return (
@@ -8,28 +12,16 @@ const TrustedBy = () => {
         <h2>Trusted by over 100,000 customers world-wide</h2>
         <div className="logos">
           <div className="logo">
-            <img
-              src="https://github.com/VenkataRamanaDerangula/TaskFlow/blob/main/images/logos/Square%20Logo.svg"
-              alt="Square"
-            />
+            <img src={SquareLogo} alt="Square" />
           </div>
           <div className="logo">
-            <img
-              src="https://github.com/VenkataRamanaDerangula/TaskFlow/blob/main/images/logos/ebay%20logo.svg"
-              alt="eBay"
-            />
+            <img src={EbayLogo} alt="eBay" />
           </div>
           <div className="logo">
-            <img
-              src="https://github.com/VenkataRamanaDerangula/TaskFlow/blob/main/images/logos/Spotify%20logo.svg"
-              alt="Spotify"
-            />
+            <img src={SpotifyLogo} alt="Spotify" />
           </div>
           <div className="logo">
-            <img
-              src="https://github.com/VenkataRamanaDerangula/TaskFlow/blob/main/images/logos/Cisco%20Logo.svg"
-              alt="Cisco"
-            />
+            <img src={CiscoLogo} alt="Cisco" />
           </div>
         </div>
       </div>
