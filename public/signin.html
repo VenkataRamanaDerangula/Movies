@@ -91,22 +91,8 @@
                     localStorage.setItem("authToken", user.accessToken);
                     alert("Login successful");
     
-                    // Notify the backend to start the server
-                    fetch('http://localhost:5000/start', {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                    })
-                    .then(response => {
-                        if (response.ok) {
-                            // Open the 3000 port after the server starts
-                            window.location.href = "https://localhost:3000/";
-                        } else {
-                            throw new Error('Failed to start server');
-                        }
-                    })
-                    .catch(error => {
-                        alert('Error: ' + error.message);
-                    });
+                    // Redirect directly to the desired URL after successful login
+                    window.location.href = "https://presentlyy-editor.netlify.app/";
                 })
                 .catch((error) => {
                     alert(error.message);
